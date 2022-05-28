@@ -1,8 +1,8 @@
 [
     {
         "id": 1,
-        "name": "Ahmad Abdul-Aziz",
-        "email": "Ahmad.abdulaziz37@gmail.com"     
+        "name": "ST Kim",
+        "email": "niecworld@gmail.com"     
     },
     {
         "id": 2,
@@ -14,12 +14,12 @@
         "name": "Abdullahi Aminu",
         "email": "Aminuawesome@mail.com"     
     },
-	    {
+	{
         "id": 4,
         "name": "Kim Soon Tae",
         "email": "hello@mail.com"     
     },
-	    {
+	{
         "id": 5,
         "name": "김순태",
         "email": "helloworld@mail.com"     
