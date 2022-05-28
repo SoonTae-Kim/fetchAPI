@@ -14,8 +14,18 @@
         "name": "Abdullahi Aminu",
         "email": "Aminuawesome@mail.com"     
     },
-    {
+	    {
         "id": 4,
+        "name": "Kim Soon Tae",
+        "email": "hello@mail.com"     
+    },
+	    {
+        "id": 5,
+        "name": "김순태",
+        "email": "helloworld@mail.com"     
+    },
+    {
+        "id": 6,
         "name": "Idris Muhammad",
         "email": "rismad@mail.com"     
     }
