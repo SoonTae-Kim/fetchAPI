@@ -13,8 +13,6 @@
             font-family: "Allerta Stencil", Sans-serif;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -26,6 +24,7 @@
                 CLICK TO GET AND DISPLAY DATA
             </p>
             <input type="submit" value="GET DATA FROM LOCAL" id="getJSON" class="w3-btn w3-white w3-border w3-border-blue w3-margin">
+            <input type="submit" value="POST DATA TO LOCAL" id="postJSON" class="w3-btn w3-white w3-border w3-border-blue w3-margin">
             <input type="submit" value="GET DATA FROM API" id="getAPI" class="w3-btn w3-blue w3-margin">
         </p>
         <hr>
@@ -54,6 +53,7 @@
 
     <script>
         document.getElementById('getJSON').addEventListener('click', getJSON);
+        document.getElementById('postJSON').addEventListener('click', postJSON);
         document.getElementById('getAPI').addEventListener('click', getAPI);
         document.getElementById('postData').addEventListener('submit', postData);
 
@@ -82,6 +82,22 @@
                     });
                 })
 
+        }
+
+        function postJSON(event) {
+            event.preventDefault();
+
+            fetch('sampleUser.json', {
+                method: 'POST',
+                headers: new Headers(),
+                body: JSON.stringify({
+                    id: 9,
+                    name: "first",
+                    email: "seoul@gmail.com"
+                }),
+            }).then((res) => res.json())
+                .then((data) => alert('Data Sent'))
+                .catch((err) => console.log(err))
         }
 
         function getAPI() {
